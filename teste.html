@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+
+    <div class="container">
+        <h1>Conversor BNDES</h1>
+        <div class="box">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="legenda">Codigo Sujo:</div>
+                    <textarea name="origem" spellcheck="false" class="form-control origem" id="baseText"></textarea>
+                </div>
+                <div class="apply-margin visible-xs"></div>
+                <div class="col-sm-12">
+                    <div class="legenda">Resolução:</div>
+                    <textarea name="destino" spellcheck="false" class="form-control destino" id="newText"></textarea>
+                </div>
+                <div class="resultwrap">
+                    <button class="btn btn-classic" onclick="diffUsingJS(0);">Comparar Textos</button>
+                    <button class="btn btn-classic" onclick="clearAll();">Limpar Tudo</button>
+                    <div id="diffoutput"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <div class="container hidden-print" style="height: auto !important;">
+        <div class="bottom-banner">
+            <script async src="js/adsbygoogle.js" crossorigin="anonymous" data-checked-head="true"></script>
+             <!-- Bottom -->
+            <ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-1714195545121238"
+                 data-ad-slot="6345858528" data-ad-format="auto" data-full-width-responsive="true"
+                 data-adsbygoogle-status="done" data-ad-status="filled">
+
+            </script>
+        </div>
+    </div>
+
+    <footer class="hidden-print"></footer>
+
+    <script src="js/prebid-ads.js"></script>
+    <script src="js/app-v1.2.js"></script>
+
+    <script>
+        var texto = "Alguma das respostas resolveu sua dúvida? Acha que pode aceitar uma delas? Veja o tour como fazer isso, se ainda não o fez. Você ajudaria a comunidade identificando qual foi a melhor solução para você. Pode aceitar apenas uma delas. Mas pode votar em qualquer pergunta ou resposta que achar útil no site todo";
+
+        const teste = []
+
+        var ind = 0
+
+        for (var i = 0; i < texto.length / 10; i++) {
+            teste.push(texto.substring(ind, ind + 10));
+            ind += 10;
+        }
+
+        console.log(teste);
+        console.log(teste.length);
+    </script>
+</head>
+<body>
+
+<div>
+    <textarea Caixa de texto> Caixa de texto </textarea>
+
+    <button> Run</button>
+
+</div>
+
+</body>
+</html>

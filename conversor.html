@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<h3>
+  Habilitaçãao - Utilitário conversor
+</h3>
+<p class="alert alert-info">
+  USO EXCLUSIVO PARA DESENVOLVIMENTO E TESTES
+</p>
+<form>
+  Coloque aqui os caracteres sujo do processo a ser importado:
+
+  <textarea
+          name="jsonOriginal"
+          id="jsonOriginal"
+          class="form-control"
+          [(ngModel)]="jsonOriginalParaImportar"
+          [disabled]="!roteiroAtualCarregado"
+  >
+  </textarea>
+
+  <textarea>
+
+  </textarea>
+  <br><br>
+  <div class="float-right bn-container-md">
+    <button type="button" class="btn btn-success" [disabled]="!roteiroAtualCarregado"
+            (click)="importarJson()"
+    >
+      Converter<i class="fa fa-angle-right"></i>
+    </button>
+  </div>
+
+</form>
+
+
+
